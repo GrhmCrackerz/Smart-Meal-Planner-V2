@@ -1,0 +1,56 @@
+.weekly-planner {
+    padding: 2rem;
+    background-color: #fffaf4; /* warm off-white */
+    border-radius: 12px;
+    max-width: 100%;
+    overflow-x: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .planner-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  .planner-table th,
+  .planner-table td {
+    border: 1px solid #f0e5da;
+    padding: 1rem;
+    min-width: 120px;
+    background-color: #fffdf9;
+  }
+  
+  .planner-table th {
+    background-color: #ffe6cc; /* soft peach */
+    color: #444;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .planner-table td:nth-child(even) {
+    background-color: #fff4e6; /* alternating peach-beige */
+  }
+  
+  .add-meal-btn {
+    background-color: #ffd1dc; /* pastel pink */
+    color: #5a3e36;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-weight: 600;
+  }
+  
+  .add-meal-btn:hover {
+    background-color: #ffb6c1; /* slightly stronger pink */
+  }
+  
+  td:first-child {
+    background-color: #f9f3e3; /* breakfast/lunch/dinner label bg */
+    font-weight: bold;
+    color: #3a2e2e;
+  }
+  
