@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Modal from './Modal';
 import MealSearch from './MealSearch';
 import './WeeklyPlanner.css';
+import GroceryList from "./GroceryList";
 
 const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const meals = ['Breakfast', 'Lunch', 'Dinner'];
@@ -12,6 +13,7 @@ const WeeklyPlanner = () => {
     const [isModalOpen, setModalOpen] = useState(false);
     const [selectedCell, setSelectedCell] = useState(null); // { day, meal}
     const [plannedMeals, setPlannedMeals] = useState({}); // Key: 'Mon-Breakfast', value: meal object
+    const [showGroceryList, setShowGroceryList] = useState(false);
 
     //Eventually store meals here!
     const handleMealSelect = (meal) => {
@@ -96,6 +98,15 @@ const WeeklyPlanner = () => {
           ))}
         </tbody>
       </table>
+
+      <button
+        className="add-meal-btn"
+        style={{ marginTop: '1rem' }}
+        onClick={() => setShowGroceryList((prev) => !prev)}
+      >
+        {showGroceryList ? 'Hide Grocery List' : 'View Grocery List'}
+      </button>
+      {showGroceryList && <GroceryList plannedMeals={plannedMeals} />}
 
       {/* Modal with MealSearch inside */}
       <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}>

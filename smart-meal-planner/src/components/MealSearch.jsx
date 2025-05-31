@@ -2,9 +2,9 @@
 import React from "react";
 
 const mockMeals = [
-    { id: 1, name: 'Chicken Tacos', servings: 4},
-    { id: 2, name: 'Thai Fried Rice', servings: 3},
-    { id: 3, name: 'Veggie Stir Fry', servings: 2}
+    { id: 1, name: 'Chicken Tacos', servings: 4, ingredients: ['Chicken', 'Taco Shells', 'Lettuce', 'Cheese']},
+    { id: 2, name: 'Thai Fried Rice', servings: 3, ingredients: ['Rice', 'Egg', 'Carrot', 'Soy Sauce']},
+    { id: 3, name: 'Veggie Stir Fry', servings: 2, ingredients: ['Broccoli', 'Carrot', 'Bell Pepper', 'Soy Sauce']}
 ];
 
 const MealSearch = ({ onSelect }) => {
