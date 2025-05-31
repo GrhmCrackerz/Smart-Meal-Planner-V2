@@ -54,3 +54,16 @@
     color: #3a2e2e;
   }
   
+  .remove-meal-btn {
+    background-color: #f08080;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 0.3rem;
+  }
+  
+  .remove-meal-btn:hover {
+    background-color: #e06666;
+  }

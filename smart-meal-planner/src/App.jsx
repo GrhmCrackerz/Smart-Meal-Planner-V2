@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import WeeklyPlanner from './WeeklyPlanner'
+import WeeklyPlanner from './components/WeeklyPlanner'
 
 function App() {
   return (

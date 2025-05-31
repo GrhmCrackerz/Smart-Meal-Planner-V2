@@ -7,7 +7,7 @@ const mockMeals = [
     { id: 3, name: 'Veggie Stir Fry', servings: 2}
 ];
 
-const MealSearch = ({ onselect }) => {
+const MealSearch = ({ onSelect }) => {
     return (
         <div>
             <h3>Select a Meal</h3>
@@ -16,7 +16,7 @@ const MealSearch = ({ onselect }) => {
                     <li key={meal.id} style={{ marginBottom: '1rem'}}>
                         <strong>{meal.name}</strong> - {meal.servings} servings
                         <br />
-                        <button onClick={() => onselect(meal)}>Select</button>
+                        <button onClick={() => onSelect(meal)}>Select</button>
                     </li>
                 ))}
             </ul>
