@@ -23,7 +23,7 @@ const GroceryList = ({ plannedMeals }) => {
     };
 
     return (
-        <div style={styles.container}>
+        <div className="grocery-list" style={styles.container}>
             <h3>Grocery List</h3>
             <ul style={styles.list}>
                 {uniqueIngredients.map((item, index) => (
